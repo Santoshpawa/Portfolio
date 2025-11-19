@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santosh Portfolio</title>
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "QNVIM-EiFzdJP2Uk1",
+            });
+        })();
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Typerwriter effect portion  -->
+    <section id="home" class="section" style="height: 50px;">
+        <div id="typewriter"></div>
+    </section>
+
+
+    <!-- About section of Portfolio -->
+    <section id="about">
+        <div class="about-img">
+            <!-- Replace with your image -->
+            <img src="./images/IMG-20250502-WA0092.jpg" alt="My Photo">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                As a Full Stack Developer, I excel in crafting robust and scalable web applications,
+                demonstrated through projects like a crowdfunding platform and note-sharing service.
+                My passion extends to Data Structures and Algorithms, where I leverage strong reasoning
+                skills to solve complex problems efficiently. I thrive on building end-to-end solutions,
+                from intuitive front-end experiences to resilient back-end architectures. Committed to
+                continuous learning and optimization, I am always seeking new challenges in the world
+                of software development. Let's connect to explore how my full-stack expertise and
+                problem-solving acumen can contribute to innovative projects.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Resume button -->
+    <button id="resume" onclick="handleResume()">Resume</button>
+
+
+    <!-- Skills Section -->
+
+
+    <div id="skills">
+        <div id="skillHeading">
+            <h1>Technical Skills</h1>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h2>FrontEnd</h2>
+                </div>
+                <div>
+                    <img src="./images/react.png" alt="react">
+                    <img src="./images/redux.png" alt="redux">
+                    <img src="./images/javascript.png" alt="javascript">
+                    <img src="./images/html.png" alt="html">
+                    <img src="./images/css.png" alt="css">
+                    <img src="./images/tailwind.jpg" alt="tailwind">
+                </div>
+                <div>
+                    <p>My preferred technologies for building responsive and modern UIs.</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Backend</h2>
+                </div>
+                <div>
+                    <img src="./images/express.png" alt="express">
+                    <img src="./images/nodejs.png" alt="nodejs">
+                    <img src="./images/firebase.png" alt="firebase">
+                    <img src="./images/mongodb.png" alt="mongobd">
+                </div>
+                <div>
+                    <p>Backend technologies I use for APIs, servers, and databases.</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Tools</h2>
+                </div>
+                <div>
+                    <img src="./images/github.png" alt="github">
+                    <img src="./images/postman.png" alt="postman">
+                    <img src="./images/vscode.png" alt="vscode">
+                </div>
+                <div>
+                    <p>My favorite tools for version control, testing, and development.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Projects Section -->
+
+
+
+        <div id="projects">
+            <div id="projectHeading">
+                <h1>Projects</h1>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <h2>Educational Gamification App</h2>
+                    </div>
+                    <div>
+                        <img src="./images/educational.PNG" alt="react">
+                    </div>
+                    <div>
+                        <p>Educational Gamification App is an online platform where you can practice DSA questions for
+                            your
+                            interviews.</p>
+                    </div>
+                    <div>
+                        <button
+                            onclick="window.open('https://educational-gamification-7df52f.netlify.app/')">Live</button>
+                        <button
+                            onclick="window.open('https://github.com/Santoshpawa/Educational-Gamification-App')">Github</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>Crowdfunding Platform</h2>
+                    </div>
+                    <div>
+                        <img src="./images/crowd.PNG" alt="react">
+                    </div>
+                    <div>
+                        <p>Crowdfunding Platform is an online application where you can raise funds for your startups
+                            and
+                            can
+                            also invest in other companies.</p>
+                    </div>
+                    <div>
+                        <button onclick="window.open('https://crowd-funding-a41886.netlify.app/')">Live</button>
+                        <button
+                            onclick="window.open('https://github.com/Santoshpawa/CrowdfundingPlatform_Finance')">Github</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>Personal Finance Tracker</h2>
+                    </div>
+                    <div>
+                        <img src="./images/finance.PNG" alt="react">
+                    </div>
+                    <div>
+                        <p>Personal finance tracker is an online, easy to use tool which will help you to track your
+                            financial
+                            behaviour and show analytics so that you can make better decisions.</p>
+                    </div>
+                    <div>
+                        <button
+                            onclick="window.open('https://personal-finance-tracker-cd7c93.netlify.app/','_blank')">Live</button>
+                        <button
+                            onclick="window.open('https://github.com/Santoshpawa/Personal-Finance-Tracker')">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr style=" border: solid; margin-top: 50px; padding: 0%; margin-bottom: 0px;">
+
+    <!-- contact section -->
+
+    <div id="contact">
+        <div>
+            <div>
+                <img src="./images/icon-linkedin.png" alt="linkedin"
+                    onclick="window.open('https://www.linkedin.com/in/santosh-singh-pawar-389569228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bftqxl3p9TgqG7evb0EcNlA%3D%3D')">
+                <img src="./images/icon-git.jpg" alt="github" onclick="window.open('https://github.com/Santoshpawa')">
+            </div>
+            <div>
+                <h4>Email: textingsantosh@gmail.com</h4>
+            </div>
+            <div>
+                <h3>Made with <span style="color:orangered">♥</span> by Santosh</h3>
+            </div>
+        </div>
+
+
+        <!-- email section -->
+        <div>
+            <form onsubmit="handleemail(event)">
+                <h3>Contact Me:</h3>
+                <input type="text" id="name" placeholder="Enter Name">
+                <input type="email" id="email" placeholder="Enter Your Email" required="true">
+                <input type="text" id="subject" placeholder="Enter Subject">
+                <textarea id="message" placeholder="Enter Message" required="true"></textarea>
+                <button type="submit" id="sendButton">Send</button>
+                <p id="emailMessage"></p>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
