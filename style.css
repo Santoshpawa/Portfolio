@@ -9,12 +9,14 @@ body {
 nav {
   display: flex;
   position: fixed;
+  top: 0px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
   background-color: #222;
   color: white;
+  z-index: 10;
 }
 
 .logo {
@@ -27,6 +29,7 @@ nav {
   list-style: none;
   display: flex;
   gap: 25px;
+  margin-right: 50px;
 }
 
 .nav-links li {
@@ -62,6 +65,7 @@ nav {
 #typewriter {
   font-size: 48px;
   border-right: 2px solid #00adb5;
+  padding-top: 50px;
   padding-right: 5px;
   white-space: nowrap;
   overflow: hidden;
@@ -78,8 +82,8 @@ nav {
 }
 
 /* About section */
-section {
-  padding: 60px 50px;
+#about {
+  padding: 100px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +151,8 @@ section {
 /* Skills section */
 
 #skillHeading > h1 {
-  margin-top: 100px;
+  padding-top: 80px;
+  margin-top: 150px;
   text-align: center;
 }
 
@@ -189,6 +194,7 @@ section {
   margin-top: 100px;
   display: block;
   text-align: center;
+  padding-top: 80px;
 }
 
 #projects > div:nth-of-type(2) {
@@ -229,7 +235,7 @@ section {
 
 #projects > div > div > div > button {
   color: white;
-  background-color: #222;
+  background-color: #949393;
   font-size: large;
   border-radius: 20px;
   padding: 10px;
@@ -238,7 +244,7 @@ section {
 }
 
 #projects > div > div > div > button:hover {
-  background-color: #161616;
+  background-color: #525050;
 }
 
 /* contacts */
